@@ -5,14 +5,14 @@
 #HINT 1: https://www.google.com/search?q=how+to+round+number+to+2+decimal+places+python&oq=how+to+round+number+to+2+decimal
 #HINT 2: https://www.kite.com/python/answers/how-to-limit-a-float-to-two-decimal-places-in-python
 print("Welcome to the tip calculator")
-total_bill=input("What was the total bill?\n")
-tip_percentage=input("What percentage tip would you like to give?\n")
-no_of_people=input("Enter the number of people?\n")
+total_bill = input("What was the total bill?\n")
+tip_percentage = input("What percentage tip would you like to give?\n")
+no_of_people = input("Enter the number of people?\n")
 #Calculate the amount included with tip
-bill_with_tip=float(total_bill)+(float(total_bill)*int(tip_percentage))/100
+bill_with_tip = float(total_bill) + (float(total_bill)*int(tip_percentage)) / 100
 #Devide the amount with no of people
-devided_tip=bill_with_tip/int(no_of_people)
+divided_tip = bill_with_tip / int(no_of_people)
 #Round the amount into two decimals
-rounded_tip=round(devided_tip,2)
+rounded_tip = round(divided_tip, 2)
 #Print the amount
 print(f"Each person should pay ${rounded_tip}")
